@@ -246,7 +246,6 @@ def big_shoe_rebounds
       end
     end
   shoes
-  binding.pry
   end
 end
   
