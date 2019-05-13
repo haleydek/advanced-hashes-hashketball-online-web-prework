@@ -231,12 +231,21 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebound
+  
+  shoes = {}
+  
   game_hash.each do |location, team_data|
-  team_data.each do |attribute, data|
-    if attribute == :players
-      data.each do |data_item, stats|
-        if data_item == player_name
-          return stats
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |data_item, stats|
+          stats.each do |stat_type, value|
+            if stat_type == :shoe
+              shoes[data_item] = value
+            end
+          end
+        end
+      end
+    end
   
 end
   
