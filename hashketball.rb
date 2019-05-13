@@ -248,7 +248,14 @@ def big_shoe_rebounds
   shoes
   find_shoes = shoes.values.sort.max
   player_name = shoes.key(find_shoes)
-  binding.pry
+  
+  game_hash.each do |location, team_data|
+  team_data.each do |attribute, data|
+    if attribute == :players
+      data.each do |data_item, stats|
+        stats.each do |stat_type, value|
+          if stat_type == :shoe
+  
   end
 end
   
