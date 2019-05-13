@@ -230,7 +230,7 @@ def player_stats(player_name)
   end
 end
 
-def big_shoe_rebound
+def big_shoe_rebounds
   shoes = {}
   
   game_hash.each do |location, team_data|
