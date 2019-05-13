@@ -246,6 +246,8 @@ def big_shoe_rebound
         end
       end
     end
-  
+    
+    shoes
+  end
 end
   
