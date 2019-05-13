@@ -247,8 +247,8 @@ def big_shoe_rebounds
     end
   shoes
   find_shoes = shoes.values.sort.max
-  player_name = shoes.
-  
+  player_name = shoes.key(find_shoes)
+  binding.pry
   end
 end
   
